@@ -1,0 +1,82 @@
+
+    body {
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+      background-color: #FFFFFF; /* Branco Neve */
+      color: #000000;
+    }
+    headerr {
+      background: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    headerr {
+      background: linear-gradient(to right,   #4682B4, #FFB6C1);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #FFFFFF; /* Branco Neve */
+      margin: 0;
+    }
+    header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+    nav{
+      text-align: center;
+      color: red;
+
+    }
+    nav a {
+      margin: 20px;
+      color: blue; /* Branco Neve */
+      text-decoration: none;
+      font-family: 'Anton', sans-serif;
+    }
+    .search-bar input {
+      padding: 5px;
+    }
+    .carousel {
+      background-color: #5d83fd; /* Azul Claro */
+      padding: 40px;
+      text-align: center;
+      color: #000000;
+    }
+    .about {
+      padding: 40px;
+      background-color: #87CEEB; /* Azul Céu */
+      color: #000000;
+    }
+    .actions button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: aquamarine; /* Azul Marinho */
+      color: #FFFFFF; /* Branco Neve */
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: linear-gradient(to right,   #4682B4, #FFB6C1);
+      color: #FFFFFF; /* Branco Neve */
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px;
+    }
+    .curso {
+      border: 1px solid #000000;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #F0F0F0;
+    }
+
+    img{
+      height: 100px; 
+      margin-right: 20px
+    }
