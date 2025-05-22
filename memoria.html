@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main-memoria.css" />
+    <link rel="stylesheet" href="css/card-memoria.css" />
+    <link rel="stylesheet" href="css/win-memoria.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="css/responsive-memoria.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JOGO DA MEMÓRIA - Mundo Senai .</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você encontrou todos os pares com</p>
+        <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+        <a href="memoria.html">Jogar denovo</a>
+      </div>
+    </div>
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+       <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> 
+      <a href="memoria.html">Reiniciar ></a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros: <span id="movimentos">0</span></h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+            <img src="src/urso.gif" ><br/>
+        <a href="index.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "sapo">
+          <img
+            class="frente"
+            src="src/game.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "sapo">
+          <img
+            class="frente"
+            src="src/game.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "vaca">
+          <img
+            class="frente"
+            src="src/computer.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "vaca">
+          <img
+            class="frente"
+            src="src/computer.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "canguru">
+          <img
+            class="frente"
+            src="src/eletri.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "canguru">
+          <img
+            class="frente"
+            src="src/eletri.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "leao">
+          <img
+            class="frente"
+            src="src/paes.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "leao">
+          <img
+            class="frente"
+            src="src/paes.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "passaro">
+          <img
+            class="frente"
+            src="src/luz.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "passaro">
+          <img
+            class="frente"
+            src="src/luz.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "elefante">
+          <img
+            class="frente"
+            src="src/tecno.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "elefante">
+          <img
+            class="frente"
+            src="src/tecno.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="src/duvidas.png"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.futuro.digital/"></a>
+        </li>
+        <li><h2>Curso de Programação</h2></li>
+        <li><h5>@profaRosangelaCunha</h5></li>
+      </ul>
+    </footer>
+    <script src="script/memoria.js"></script>
+  </body>
+</html>
